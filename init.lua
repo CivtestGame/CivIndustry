@@ -56,8 +56,6 @@ local function convert_old_factory(pos, node)
    local meta = minetest.get_meta(pos)
    meta:set_string("inactive_node", new_node_name)
 
-   minetest.log(dump(meta:to_table()))
-
    minetest.log("Converted "..node.name.." to "..new_node_name)
    minetest.swap_node(
       pos, { name = new_node_name,
