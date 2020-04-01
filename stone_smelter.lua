@@ -148,7 +148,7 @@ minetest.register_node("civindustry:stone_smelter_active", {
 		"default_furnace_side.png", "default_furnace_side.png",
 		"default_furnace_side.png",
 		{
-			image = "default_stone_smelter_front_active.png",
+			image = "civindustry_stone_smelter_front_active.png",
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",

@@ -128,7 +128,7 @@ minetest.register_node("civindustry:burner_active", {
 	tiles = {
 		"default_furnace_top.png", "default_furnace_bottom.png",
 		"default_furnace_side.png", "default_furnace_side.png",
-		"default_furnace_side.png", "default_burner_front_active.png"
+		"default_furnace_side.png", "civindustry_burner_front_active.png"
 		-- {
 		-- 	image = "default_furnace_front_active.png",
 		-- 	backface_culling = false,
