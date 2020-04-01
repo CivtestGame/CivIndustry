@@ -35,38 +35,59 @@ dofile(modpath .. "/exceptional_smelter.lua")
 
 dofile(modpath .. "/stone_smelter.lua")
 
-minetest.log("[CivIndustry] Initialised.")
+--------------------------------------------------------------------------------
+--
+-- Convert factory-mod factories to CivIndustry ones
+--
+--------------------------------------------------------------------------------
+
+local old_factory_lookup = {
+   ["factory_mod:burner"] = true,
+   ["factory_mod:smelter"] = true,
+   ["factory_mod:advanced_smelter"] = true,
+   ["factory_mod:exceptional_smelter"] = true,
+   ["factory_mod:stone_smelter"] = true
+}
+
+local function convert_old_factory(pos, node)
+   local factory_name = (node.name):split(":")[2]
+   local new_node_name = "civindustry:" .. factory_name
+
+   local meta = minetest.get_meta(pos)
+   meta:set_string("inactive_node", new_node_name)
+
+   minetest.log(dump(meta:to_table()))
+
+   minetest.log("Converted "..node.name.." to "..new_node_name)
+   minetest.swap_node(
+      pos, { name = new_node_name,
+             param1 = node.param1,
+             param2 = node.param2 }
+   )
+end
+
+minetest.register_on_punchnode(function(pos, node, puncher, pointed_thing)
+      if old_factory_lookup[node.name] then
+         convert_old_factory(pos, node)
+      end
+end)
+
+local old_factory_nodes = {}
+for k,_ in pairs(old_factory_lookup) do
+   minetest.log(k)
+   old_factory_nodes[#old_factory_nodes + 1] = k
+end
 
 minetest.register_lbm({
       label = "Update factories",
       name = "civindustry:update_factories",
-      nodenames = {
-         "factory_mod:burner", "factory_mod:smelter",
-         "factory_mod:advanced_smelter", "factory_mod:exceptional_smelter",
-         "factory_mod:stone_smelter"
-      },
+      nodenames = old_factory_nodes,
       run_at_every_load = true,
-      action = function(pos, node)
-
-         -- BIG BUG: SMELTERS TURN BACK TO THEIR OLD VERSION AFTER AN
-         -- INTERACT. IDK WHY.
-
-         local factory_name = (node.name):split(":")[2]
-         local new_node_name = "civindustry:" .. factory_name
-
-         local meta = minetest.get_meta(pos)
-         meta:set_string("inactive_node", new_node_name)
-
-         minetest.log(dump(meta:to_table()))
-
-         minetest.log("Converted "..node.name.." to "..new_node_name)
-         minetest.swap_node(
-            pos, { name = new_node_name,
-                   param1 = node.param1,
-                   param2 = node.param2 }
-         )
-      end
+      action = convert_old_factory
 })
 
+--------------------------------------------------------------------------------
+
+minetest.log("[CivIndustry] Initialised.")
 
 return civindustry
