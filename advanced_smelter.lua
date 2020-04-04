@@ -10,7 +10,23 @@ simplecrafting_lib.register(
    "advanced_smelter_fuel",
    {
       input = { ["default:coke"] = 1 },
-      burntime = 10,
+      burntime = 80,
+   }
+)
+
+simplecrafting_lib.register(
+   "advanced_smelter_fuel",
+   {
+      input = { ["default:charcoal"] = 1 },
+      burntime = 20,
+   }
+)
+
+simplecrafting_lib.register(
+   "advanced_smelter_fuel",
+   {
+      input = { ["default:coal"] = 1 },
+      burntime = 20,
    }
 )
 
@@ -29,7 +45,6 @@ simplecrafting_lib.register(
    {
       input = {
          ["default:iron_lump"] = 1,
-         ["default:obsidian_shard"] = 3
       },
       output = "default:iron_ingot 1",
       cooktime = 10
