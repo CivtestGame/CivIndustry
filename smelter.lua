@@ -9,7 +9,7 @@ simplecrafting_lib.register(
    "smelter_fuel",
    {
       input = { ["default:coke"] = 1 },
-      burntime = 10,
+      burntime = 50,
    }
 )
 
@@ -17,7 +17,7 @@ simplecrafting_lib.register(
    "smelter_fuel",
    {
       input = { ["default:charcoal"] = 1 },
-      burntime = 5,
+      burntime = 30,
    }
 )
 
@@ -25,7 +25,7 @@ simplecrafting_lib.register(
    "smelter_fuel",
    {
       input = { ["default:coal_lump"] = 1 },
-      burntime = 5,
+      burntime = 30,
    }
 )
 
@@ -33,7 +33,7 @@ simplecrafting_lib.register(
    "smelter_fuel",
    {
       input = { ["default:coalblock"] = 1 },
-      burntime = 45,
+      burntime = 9*30,
    }
 )
 
@@ -81,10 +81,10 @@ simplecrafting_lib.register(
    "smelter",
    {
       input = {
-         ["default:tin_lump"] = 1,
+         ["default:tin_lump"] = 3,
          ["default:copper_lump"] = 1,
       },
-      output = "default:bronze_ingot 1",
+      output = "default:bronze_ingot 4",
       cooktime = 30
 })
 

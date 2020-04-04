@@ -28,12 +28,28 @@ function civindustry.factory_drops_from_recipe(recipe, drop_reduction)
 end
 
 dofile(modpath .. "/burner.lua")
+dofile(modpath .. "/assembler.lua")
 
 dofile(modpath .. "/smelter.lua")
 dofile(modpath .. "/advanced_smelter.lua")
 dofile(modpath .. "/exceptional_smelter.lua")
 
+dofile(modpath .. "/coke_oven.lua")
+dofile(modpath .. "/charcoal_oven.lua")
+
+dofile(modpath .. "/alloy_smelter.lua")
+
+dofile(modpath .. "/open_hearth.lua")
+dofile(modpath .. "/basic_oxy_furn.lua")
+
 dofile(modpath .. "/stone_smelter.lua")
+dofile(modpath .. "/kiln.lua")
+dofile(modpath .. "/smoker.lua")
+dofile(modpath .. "/bakery.lua")
+
+dofile(modpath .. "/component_factory.lua")
+dofile(modpath .. "/grindstone.lua")
+dofile(modpath .. "/foundry.lua")
 
 --------------------------------------------------------------------------------
 --

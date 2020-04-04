@@ -77,6 +77,26 @@ simplecrafting_lib.register(
       cooktime = 2
 })
 
+simplecrafting_lib.register(
+   "stone_smelter",
+   {
+      input = {
+         ["default:limestone_dust"] = 5
+      },
+      output = "default:quicklime 3",
+      cooktime = 8
+})
+
+simplecrafting_lib.register(
+   "stone_smelter",
+   {
+      input = {
+         ["default:coral_skeleton"] = 4
+      },
+      output = "default:quicklime 5",
+      cooktime = 8
+})
+
 local stone_smelter_fns = simplecrafting_lib.generate_multifurnace_functions("stone_smelter", "stone_smelter_fuel", {
       show_guides = true,
       alphabetize_items = true,

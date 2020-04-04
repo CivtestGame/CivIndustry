@@ -9,6 +9,22 @@ simplecrafting_lib.register(
    "exceptional_smelter_fuel",
    {
       input = { ["default:coke"] = 1 },
+      burntime = 80,
+   }
+)
+
+simplecrafting_lib.register(
+   "exceptional_smelter_fuel",
+   {
+      input = { ["default:charcoal"] = 1 },
+      burntime = 10,
+   }
+)
+
+simplecrafting_lib.register(
+   "exceptional_smelter_fuel",
+   {
+      input = { ["default:coal"] = 1 },
       burntime = 10,
    }
 )
@@ -17,11 +33,30 @@ simplecrafting_lib.register(
    "exceptional_smelter",
    {
       input = {
-         ["default:iron_lump"] = 1,
-         ["default:quicklime"] = 8
+         ["default:stone_with_copper"] = 5
       },
-      output = "default:steel_ingot 1",
-      cooktime = 25
+      output = "default:copper_lump 6",
+      cooktime = 40
+})
+
+simplecrafting_lib.register(
+   "exceptional_smelter",
+   {
+      input = {
+         ["default:stone_with_tin"] = 5
+      },
+      output = "default:tin_lump 6",
+      cooktime = 40
+})
+
+simplecrafting_lib.register(
+   "exceptional_smelter",
+   {
+      input = {
+         ["default:stone_with_iron"] = 1,
+      },
+      output = "default:iron_lump 1",
+      cooktime = 8
 })
 
 simplecrafting_lib.register(
@@ -31,7 +66,17 @@ simplecrafting_lib.register(
          ["default:stone_with_gold"] = 1
       },
       output = "default:gold_lump 1",
-      cooktime = 10
+      cooktime = 8
+})
+
+simplecrafting_lib.register(
+   "exceptional_smelter",
+   {
+      input = {
+         ["default:iron_lump"] = 1
+      },
+      output = "default:iron_ingot 1",
+      cooktime = 5
 })
 
 simplecrafting_lib.register(
@@ -41,13 +86,13 @@ simplecrafting_lib.register(
          ["default:gold_lump"] = 1
       },
       output = "default:gold_ingot 1",
-      cooktime = 10
+      cooktime = 5
 })
 
 local exceptional_smelter_fns = simplecrafting_lib.generate_multifurnace_functions("exceptional_smelter", "exceptional_smelter_fuel", {
       show_guides = true,
       alphabetize_items = true,
-      description = "Exceptional Smelter",
+      description = "Blast Furnace",
       protect_inventory = true,
 --      crafting_time_multiplier = function(pos, recipe),
          active_node = "civindustry:exceptional_smelter_active",
@@ -80,7 +125,7 @@ exceptional_smelter_fns.drop = {
 --
 
 minetest.register_node("civindustry:exceptional_smelter", {
-	description = "Exceptional Smelter",
+	description = "Blast Furnace",
 	tiles = {
 		"default_furnace_top.png", "default_furnace_bottom.png",
 		"default_furnace_side.png", "default_furnace_side.png",
@@ -106,7 +151,7 @@ minetest.register_node("civindustry:exceptional_smelter", {
 })
 
 minetest.register_node("civindustry:exceptional_smelter_active", {
-	description = "Exceptional Smelter",
+	description = "Blast Furnace",
 	tiles = {
 		"default_furnace_top.png", "default_furnace_bottom.png",
 		"default_furnace_side.png", "default_furnace_side.png",
