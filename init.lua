@@ -62,7 +62,13 @@ local old_factory_lookup = {
    ["factory_mod:smelter"] = true,
    ["factory_mod:advanced_smelter"] = true,
    ["factory_mod:exceptional_smelter"] = true,
-   ["factory_mod:stone_smelter"] = true
+   ["factory_mod:stone_smelter"] = true,
+
+   ["factory_mod:burner_active"] = true,
+   ["factory_mod:smelter_active"] = true,
+   ["factory_mod:advanced_smelter_active"] = true,
+   ["factory_mod:exceptional_smelter_active"] = true,
+   ["factory_mod:stone_smelter_active"] = true
 }
 
 local function convert_old_factory(pos, node)
@@ -94,7 +100,7 @@ end
 
 minetest.register_lbm({
       label = "Update factories",
-      name = "civindustry:update_factories",
+      name = "civindustry:update_factories2",
       nodenames = old_factory_nodes,
       run_at_every_load = true,
       action = convert_old_factory
