@@ -60,6 +60,16 @@ simplecrafting_lib.register(
       cooktime = 80
 })
 
+simplecrafting_lib.register(
+   "smoker",
+   {
+      input = {
+         ["farming:tofu"] = 1
+      },
+      output = "farming:smoked_tofu 1",
+      cooktime = 40
+})
+
 local smoker_fns = simplecrafting_lib.generate_multifurnace_functions("smoker", "smoker_fuel", {
       show_guides = true,
       alphabetize_items = true,

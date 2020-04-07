@@ -68,6 +68,34 @@ simplecrafting_lib.register(
       cooktime = 60
 })
 
+simplecrafting_lib.register(
+   "bakery",
+   {
+      input = {
+         ["farming:flour"] = 8,
+         ["group:food_cooked_meat"] = 4,
+		 ["group:food_egg"] = 3,
+		 ["group:food_fat"] = 2,
+		 ["farming:potato"] = 3
+      },
+      output = "farming:pie_luxurious 5",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "bakery",
+   {
+      input = {
+         ["farming:flour"] = 6,
+         ["default:apple"] = 6,
+		 ["farming:rhubarb"] = 4,
+		 ["farming:sugar"] = 3,
+		 ["group:food_fat"] = 2
+      },
+      output = "farming:crumble 5",
+      cooktime = 60
+})
+
 local bakery_fns = simplecrafting_lib.generate_multifurnace_functions("bakery", "bakery_fuel", {
       show_guides = true,
       alphabetize_items = true,
