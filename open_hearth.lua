@@ -33,8 +33,7 @@ simplecrafting_lib.register(
    "open_hearth",
    {
       input = {
-         ["default:iron_lump"] = 2,
-		 ["default:stone_with_iron"] = 2,
+         ["default:iron_lump"] = 4,
 		 ["default:quicklime"] = 5
       },
       output = "default:steel_lump 5",
