@@ -17,8 +17,7 @@ simplecrafting_lib.register(
    "basic_oxy_furn",
    {
       input = {
-         ["default:iron_lump"] = 2,
-		 ["default:stone_with_iron"] = 2,
+         ["default:iron_lump"] = 4,
 		 ["default:quicklime"] = 8
       },
       output = "default:fine_steel_lump 5",
