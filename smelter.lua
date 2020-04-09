@@ -54,7 +54,7 @@ simplecrafting_lib.register(
          ["default:copper_lump"] = 1
       },
       output = "default:copper_ingot 1",
-      cooktime = 15
+      cooktime = 5
 })
 
 simplecrafting_lib.register(
@@ -74,15 +74,26 @@ simplecrafting_lib.register(
          ["default:tin_lump"] = 1
       },
       output = "default:tin_ingot 1",
-      cooktime = 15
+      cooktime = 5
 })
 
 simplecrafting_lib.register(
    "smelter",
    {
       input = {
-         ["default:tin_lump"] = 3,
-         ["default:copper_lump"] = 1,
+         ["default:tin_lump"] = 1,
+         ["default:copper_lump"] = 3,
+      },
+      output = "default:bronze_ingot 4",
+      cooktime = 10
+})
+
+simplecrafting_lib.register(
+   "smelter",
+   {
+      input = {
+         ["default:tin_ingot"] = 1,
+         ["default:copper_ingot"] = 3,
       },
       output = "default:bronze_ingot 4",
       cooktime = 30

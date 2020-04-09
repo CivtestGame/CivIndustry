@@ -9,7 +9,7 @@ simplecrafting_lib.register(
    "exceptional_smelter_fuel",
    {
       input = { ["default:coke"] = 1 },
-      burntime = 80,
+      burntime = 40,
    }
 )
 
@@ -17,7 +17,7 @@ simplecrafting_lib.register(
    "exceptional_smelter_fuel",
    {
       input = { ["default:charcoal"] = 1 },
-      burntime = 10,
+      burntime = 5,
    }
 )
 
@@ -25,7 +25,7 @@ simplecrafting_lib.register(
    "exceptional_smelter_fuel",
    {
       input = { ["default:coal"] = 1 },
-      burntime = 10,
+      burntime = 5,
    }
 )
 
@@ -33,40 +33,57 @@ simplecrafting_lib.register(
    "exceptional_smelter",
    {
       input = {
-         ["default:stone_with_copper"] = 5
+         ["default:stone_with_copper"] = 10
       },
-      output = "default:copper_lump 6",
-      cooktime = 40
+      output = "default:copper_lump 12",
+	  returns = {
+        ["default:elem_zinc"] = 2,
+		["default:elem_chromium"] = 1,
+      },
+      cooktime = 20
 })
 
 simplecrafting_lib.register(
    "exceptional_smelter",
    {
       input = {
-         ["default:stone_with_tin"] = 5
+         ["default:stone_with_tin"] = 10
       },
-      output = "default:tin_lump 6",
-      cooktime = 40
+      output = "default:tin_lump 12",
+	  returns = {
+        ["default:elem_nickel"] = 1,
+		["default:lead"] = 1,
+		["default:elem_manganese"] = 1,
+      },
+      cooktime = 20
 })
 
 simplecrafting_lib.register(
    "exceptional_smelter",
    {
       input = {
-         ["default:stone_with_iron"] = 1,
+         ["default:stone_with_iron"] = 10,
       },
-      output = "default:iron_lump 1",
-      cooktime = 8
+      output = "default:iron_lump 12",
+	  returns = {
+        ["default:elem_manganese"] = 2,
+		["default:elem_nickel"] = 1,
+      },
+      cooktime = 20
 })
 
 simplecrafting_lib.register(
    "exceptional_smelter",
    {
       input = {
-         ["default:stone_with_gold"] = 1
+         ["default:stone_with_gold"] = 10
       },
-      output = "default:gold_lump 1",
-      cooktime = 8
+      output = "default:gold_lump 12",
+	  returns = {
+		["default:lead"] = 2,
+		["default:elem_chromium"] = 1,
+      },
+      cooktime = 20
 })
 
 simplecrafting_lib.register(
@@ -76,7 +93,7 @@ simplecrafting_lib.register(
          ["default:iron_lump"] = 1
       },
       output = "default:iron_ingot 1",
-      cooktime = 5
+      cooktime = 2
 })
 
 simplecrafting_lib.register(
@@ -86,7 +103,7 @@ simplecrafting_lib.register(
          ["default:gold_lump"] = 1
       },
       output = "default:gold_ingot 1",
-      cooktime = 5
+      cooktime = 2
 })
 
 local exceptional_smelter_fns = simplecrafting_lib.generate_multifurnace_functions("exceptional_smelter", "exceptional_smelter_fuel", {

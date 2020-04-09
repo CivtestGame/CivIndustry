@@ -9,7 +9,7 @@ simplecrafting_lib.register(
    "basic_oxy_furn_fuel",
    {
       input = { ["default:coke"] = 1 },
-      burntime = 80,
+      burntime = 20,
    }
 )
 
@@ -21,7 +21,7 @@ simplecrafting_lib.register(
 		 ["default:quicklime"] = 8
       },
       output = "default:fine_steel_lump 5",
-      cooktime = 80
+      cooktime = 40
 })
 
 simplecrafting_lib.register(
@@ -31,7 +31,7 @@ simplecrafting_lib.register(
          ["default:fine_steel_lump"] = 1
       },
       output = "default:fine_steel_ingot 1",
-      cooktime = 5
+      cooktime = 2
 })
 
 local basic_oxy_furn_fns = simplecrafting_lib.generate_multifurnace_functions("basic_oxy_furn", "basic_oxy_furn_fuel", {

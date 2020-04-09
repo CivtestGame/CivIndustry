@@ -44,6 +44,18 @@ simplecrafting_lib.register(
    "alloy_smelter",
    {
       input = {
+         ["default:copper_ingot"] = 4,
+		 ["default:tin_ingot"] = 1
+      },
+      output = "default:bronze_ingot 5",
+      cooktime = 20
+})
+
+
+simplecrafting_lib.register(
+   "alloy_smelter",
+   {
+      input = {
          ["default:copper_lump"] = 6,
 		 ["default:tin_lump"] = 1,
 		 ["default:elem_zinc"] = 3

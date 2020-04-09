@@ -9,7 +9,7 @@ simplecrafting_lib.register(
    "open_hearth_fuel",
    {
       input = { ["default:coke"] = 1 },
-      burntime = 80,
+      burntime = 40,
    }
 )
 
@@ -17,7 +17,7 @@ simplecrafting_lib.register(
    "open_hearth_fuel",
    {
       input = { ["default:charcoal"] = 1 },
-      burntime = 10,
+      burntime = 5,
    }
 )
 
@@ -25,7 +25,7 @@ simplecrafting_lib.register(
    "open_hearth_fuel",
    {
       input = { ["default:coal_lump"] = 1 },
-      burntime = 10,
+      burntime = 5,
    }
 )
 
@@ -37,7 +37,7 @@ simplecrafting_lib.register(
 		 ["default:quicklime"] = 5
       },
       output = "default:steel_lump 5",
-      cooktime = 20
+      cooktime = 10
 })
 
 simplecrafting_lib.register(
@@ -47,7 +47,7 @@ simplecrafting_lib.register(
          ["default:steel_lump"] = 1
       },
       output = "default:steel_ingot 1",
-      cooktime = 5
+      cooktime = 2
 })
 
 local open_hearth_fns = simplecrafting_lib.generate_multifurnace_functions("open_hearth", "open_hearth_fuel", {

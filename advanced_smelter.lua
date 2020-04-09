@@ -10,7 +10,7 @@ simplecrafting_lib.register(
    "advanced_smelter_fuel",
    {
       input = { ["default:coke"] = 1 },
-      burntime = 80,
+      burntime = 60,
    }
 )
 
@@ -34,20 +34,20 @@ simplecrafting_lib.register(
    "advanced_smelter",
    {
       input = {
-         ["default:stone_with_iron"] = 1
+         ["default:stone_with_iron"] = 5
       },
-      output = "default:iron_lump 1",
-      cooktime = 10
+      output = "default:iron_lump 5",
+      cooktime = 30
 })
 
 simplecrafting_lib.register(
    "advanced_smelter",
    {
       input = {
-         ["default:iron_lump"] = 1,
+         ["default:iron_lump"] = 5,
       },
-      output = "default:iron_ingot 1",
-      cooktime = 10
+      output = "default:iron_ingot 5",
+      cooktime = 30
 })
 
 local advanced_smelter_fns = simplecrafting_lib.generate_multifurnace_functions("advanced_smelter", "advanced_smelter_fuel", {
