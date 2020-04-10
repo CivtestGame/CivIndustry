@@ -99,6 +99,78 @@ simplecrafting_lib.register(
       cooktime = 60
 })
 
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:steel_lump"] = 12,
+		 ["default:comp_hammer"] = 1,
+		 ["default:sand"] = 5
+      },
+      output = "default:comp_steel_axehead 5",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:fine_steel_lump"] = 12,
+		 ["default:comp_hammer_adv"] = 1,
+		 ["default:sand"] = 5
+      },
+      output = "default:comp_fine_steel_axehead 5",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:steel_lump"] = 4,
+		 ["default:comp_hammer"] = 1,
+		 ["default:sand"] = 5
+      },
+      output = "default:comp_steel_shovelhead 5",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:fine_steel_lump"] = 4,
+		 ["default:comp_hammer_adv"] = 1,
+		 ["default:sand"] = 5
+      },
+      output = "default:comp_fine_steel_shovelhead 5",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:steel_lump"] = 8,
+		 ["default:comp_hammer"] = 1,
+		 ["default:sand"] = 5
+      },
+      output = "default:comp_steel_swordhead 5",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:fine_steel_lump"] = 8,
+		 ["default:comp_hammer_adv"] = 1,
+		 ["default:sand"] = 5
+      },
+      output = "default:comp_fine_steel_swordhead 5",
+      cooktime = 60
+})
+
 local foundry_fns = simplecrafting_lib.generate_multifurnace_functions("foundry", "foundry_fuel", {
       show_guides = true,
       alphabetize_items = true,

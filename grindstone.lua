@@ -70,6 +70,72 @@ simplecrafting_lib.register(
       cooktime = 60
 })
 
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:comp_steel_axehead"] = 1,
+		 ["default:comp_sharp"] = 1
+      },
+      output = "default:comp_steel_axehead_sharp 1",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:comp_fine_steel_axehead"] = 1,
+		 ["default:comp_sharp_adv"] = 1
+      },
+      output = "default:comp_fine_steel_axehead_sharp 1",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:comp_steel_shovelhead"] = 1,
+		 ["default:comp_sharp"] = 1
+      },
+      output = "default:comp_steel_shovelhead_sharp 1",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:comp_fine_steel_shovelhead"] = 1,
+		 ["default:comp_sharp_adv"] = 1
+      },
+      output = "default:comp_fine_steel_shovelhead_sharp 1",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:comp_steel_swordhead"] = 1,
+		 ["default:comp_sharp"] = 1
+      },
+      output = "default:comp_steel_swordhead_sharp 1",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:comp_fine_steel_swordhead"] = 1,
+		 ["default:comp_sharp_adv"] = 1
+      },
+      output = "default:comp_fine_steel_swordhead_sharp 1",
+      cooktime = 60
+})
+
 local grindstone_fns = simplecrafting_lib.generate_multifurnace_functions("grindstone", "grindstone_fuel", {
       show_guides = true,
       alphabetize_items = true,
