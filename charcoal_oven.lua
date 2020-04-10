@@ -33,61 +33,10 @@ simplecrafting_lib.register(
    "charcoal_oven",
    {
       input = {
-         ["default:tree"] = 4,
-		 ["default:wood"] = 3,
-		 ["default:stick"] = 4
+         ["group:tree"] = 12,
       },
-      output = "default:charcoal 11",
-      cooktime = 15
-})
-
-simplecrafting_lib.register(
-   "charcoal_oven",
-   {
-      input = {
-         ["default:acacia_tree"] = 4,
-		 ["default:acacia_wood"] = 3,
-		 ["default:stick"] = 4
-      },
-      output = "default:charcoal 11",
-      cooktime = 15
-})
-
-simplecrafting_lib.register(
-   "charcoal_oven",
-   {
-      input = {
-         ["default:aspen_tree"] = 4,
-		 ["default:aspen_wood"] = 3,
-		 ["default:stick"] = 4
-      },
-      output = "default:charcoal 11",
-      cooktime = 15
-})
-
-
-simplecrafting_lib.register(
-   "charcoal_oven",
-   {
-      input = {
-         ["default:pine_tree"] = 4,
-		 ["default:pine_wood"] = 3,
-		 ["default:stick"] = 4
-      },
-      output = "default:charcoal 11",
-      cooktime = 15
-})
-
-simplecrafting_lib.register(
-   "charcoal_oven",
-   {
-      input = {
-         ["default:jungletree"] = 4,
-		 ["default:junglewood"] = 3,
-		 ["default:stick"] = 4
-      },
-      output = "default:charcoal 11",
-      cooktime = 15
+      output = "default:charcoal 41",
+      cooktime = 30
 })
 
 local charcoal_oven_fns = simplecrafting_lib.generate_multifurnace_functions("charcoal_oven", "charcoal_oven_fuel", {
@@ -104,7 +53,7 @@ local charcoal_oven_fns = simplecrafting_lib.generate_multifurnace_functions("ch
 -- Charcoal Oven Recipe
 
 local charcoal_oven_recipe = {
-   ["default:tree"] = 198,
+   ["group:tree"] = 198,
    ["default:stone"] = 99,
    ["default:charcoal"] = 198
 }
