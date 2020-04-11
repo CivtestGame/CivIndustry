@@ -46,6 +46,7 @@ dofile(modpath .. "/stone_smelter.lua")
 dofile(modpath .. "/kiln.lua")
 dofile(modpath .. "/smoker.lua")
 dofile(modpath .. "/bakery.lua")
+dofile(modpath .. "/carpenter.lua")
 
 dofile(modpath .. "/component_factory.lua")
 dofile(modpath .. "/grindstone.lua")
