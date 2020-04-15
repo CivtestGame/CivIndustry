@@ -152,7 +152,7 @@ minetest.register_node("civindustry:assembler_active", {
 	tiles = {
 		"civindustry_assembler_top.png", "civindustry_assembler_top.png",
 		"civindustry_assembler_side.png", "civindustry_assembler_side.png",
-		"civindustry_assembler_side.png",		
+		"civindustry_assembler_side.png",
 		{
 			image = "civindustry_assembler_active.png",
 			backface_culling = false,

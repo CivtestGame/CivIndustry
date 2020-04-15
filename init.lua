@@ -95,7 +95,6 @@ end)
 
 local old_factory_nodes = {}
 for k,_ in pairs(old_factory_lookup) do
-   minetest.log(k)
    old_factory_nodes[#old_factory_nodes + 1] = k
 end
 
