@@ -94,7 +94,7 @@ minetest.register_node("civindustry:advanced_smelter", {
 		"default_furnace_side.png", "civindustry_advanced_smelter_front.png"
 	},
 	paramtype2 = "facedir",
-	groups = {cracky=2},
+	groups = {cracky=2, level=2},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -132,7 +132,7 @@ minetest.register_node("civindustry:advanced_smelter_active", {
 	paramtype2 = "facedir",
 	light_source = 8,
 	drop = "civindustry:advanced_smelter",
-	groups = {cracky=2, not_in_creative_inventory=1},
+	groups = {cracky=2, level=2, not_in_creative_inventory=1},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),

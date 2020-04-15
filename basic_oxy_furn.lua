@@ -78,7 +78,7 @@ minetest.register_node("civindustry:basic_oxy_furn", {
 		"civindustry_basic_oxy_furn_side.png", "civindustry_basic_oxy_furn_front.png"
 	},
 	paramtype2 = "facedir",
-	groups = {cracky=2},
+	groups = {cracky=1, level=3},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -116,7 +116,7 @@ minetest.register_node("civindustry:basic_oxy_furn_active", {
 	paramtype2 = "facedir",
 	light_source = 8,
 	drop = "civindustry:basic_oxy_furn",
-	groups = {cracky=2, not_in_creative_inventory=1},
+	groups = {cracky=1, level=3, not_in_creative_inventory=1},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),

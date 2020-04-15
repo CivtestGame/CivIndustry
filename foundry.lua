@@ -216,7 +216,7 @@ minetest.register_node("civindustry:foundry", {
 		"civindustry_foundry_side.png", "civindustry_foundry_front.png"
 	},
 	paramtype2 = "facedir",
-	groups = {cracky=2},
+	groups = {cracky=1},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -254,7 +254,7 @@ minetest.register_node("civindustry:foundry_active", {
 	paramtype2 = "facedir",
 	light_source = 8,
 	drop = "civindustry:foundry",
-	groups = {cracky=2, not_in_creative_inventory=1},
+	groups = {cracky=1, not_in_creative_inventory=1},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
