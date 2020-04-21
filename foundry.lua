@@ -171,6 +171,111 @@ simplecrafting_lib.register(
       cooktime = 60
 })
 
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:iron_ingot"] = 5,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_iron_chain 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:iron_ingot"] = 6,
+		 ["default:comp_hammer"] = 1,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_iron_scale 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:iron_ingot"] = 8,
+		 ["default:comp_hammer"] = 1,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_iron_plate 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:steel_ingot"] = 5,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_steel_chain 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:steel_ingot"] = 6,
+		 ["default:comp_hammer"] = 1,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_steel_scale 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:steel_ingot"] = 8,
+		 ["default:comp_hammer"] = 1,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_steel_plate 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:fine_steel_ingot"] = 5,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_fine_steel_chain 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:fine_steel_ingot"] = 6,
+		 ["default:comp_hammer_adv"] = 1,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_fine_steel_scale 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:fine_steel_ingot"] = 8,
+		 ["default:comp_hammer_adv"] = 1,
+		 ["default:sand"] = 1
+      },
+      output = "default:comp_fine_steel_plate 10",
+      cooktime = 20
+})
+
 local foundry_fns = simplecrafting_lib.generate_multifurnace_functions("foundry", "foundry_fuel", {
       show_guides = true,
       alphabetize_items = true,
