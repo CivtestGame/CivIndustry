@@ -87,6 +87,16 @@ simplecrafting_lib.register(
       cooktime = 60
 })
 
+simplecrafting_lib.register(
+   "component_factory",
+   {
+      input = {
+         ["farming:string"] = 4,
+		 ["group:wool"] = 1,
+      },
+      output = "default:comp_fabric 1",
+      cooktime = 5
+})
 
 local component_factory_fns = simplecrafting_lib.generate_multifurnace_functions("component_factory", "component_factory_fuel", {
       show_guides = true,
