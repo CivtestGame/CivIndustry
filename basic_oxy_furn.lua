@@ -21,7 +21,10 @@ simplecrafting_lib.register(
 		 ["default:quicklime"] = 8
       },
       output = "default:fine_steel_lump 5",
-      cooktime = 40
+	  returns = {
+		["default:slag"] = 2,
+      },
+      cooktime = 20
 })
 
 simplecrafting_lib.register(
