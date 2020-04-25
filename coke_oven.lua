@@ -43,8 +43,11 @@ simplecrafting_lib.register(
       input = {
          ["default:coal_lump"] = 8
       },
-      output = "default:coke 5",
-      cooktime = 15
+      output = "default:coke 6",
+	  returns = {
+		["default:elem_sulphur"] = 2,
+      },
+      cooktime = 12
 })
 
 local coke_oven_fns = simplecrafting_lib.generate_multifurnace_functions("coke_oven", "coke_oven_fuel", {
