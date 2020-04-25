@@ -106,6 +106,26 @@ simplecrafting_lib.register(
       cooktime = 2
 })
 
+simplecrafting_lib.register(
+   "exceptional_smelter",
+   {
+      input = {
+         ["default:copper_lump"] = 1
+      },
+      output = "default:copper_ingot 1",
+      cooktime = 1
+})
+
+simplecrafting_lib.register(
+   "exceptional_smelter",
+   {
+      input = {
+         ["default:tin_lump"] = 1
+      },
+      output = "default:tin_ingot 1",
+      cooktime = 1
+})
+
 local exceptional_smelter_fns = simplecrafting_lib.generate_multifurnace_functions("exceptional_smelter", "exceptional_smelter_fuel", {
       show_guides = true,
       alphabetize_items = true,
