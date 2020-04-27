@@ -136,6 +136,20 @@ simplecrafting_lib.register(
       cooktime = 60
 })
 
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:gravel"] = 4,
+		 ["group:sand"] = 4,
+		 ["default:clay"] = 1,
+		 ["default:limestone"] = 1,
+		 ["default:comp_sharp"] = 1
+      },
+      output = "citadella:reinf_cement 20",
+      cooktime = 60
+})
+
 local grindstone_fns = simplecrafting_lib.generate_multifurnace_functions("grindstone", "grindstone_fuel", {
       show_guides = true,
       alphabetize_items = true,
