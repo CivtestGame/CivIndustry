@@ -147,7 +147,7 @@ simplecrafting_lib.register(
 		 ["default:comp_sharp"] = 1
       },
       output = "citadella:reinf_cement 20",
-      cooktime = 60
+      cooktime = 20
 })
 
 local grindstone_fns = simplecrafting_lib.generate_multifurnace_functions("grindstone", "grindstone_fuel", {
