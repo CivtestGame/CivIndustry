@@ -282,7 +282,7 @@ simplecrafting_lib.register(
       input = {
          ["default:bronze_ingot"] = 5
       },
-      output = "citadella:reinf_rebar_bronze 10",
+      output = "citadella:reinf_rebar_bronze 20",
       cooktime = 5
 })
 
@@ -292,7 +292,7 @@ simplecrafting_lib.register(
       input = {
          ["default:wrought_iron_ingot"] = 5
       },
-      output = "citadella:reinf_rebar_wrought_iron 10",
+      output = "citadella:reinf_rebar_wrought_iron 20",
       cooktime = 10
 })
 
@@ -302,7 +302,7 @@ simplecrafting_lib.register(
       input = {
          ["default:fine_steel_ingot"] = 5
       },
-      output = "citadella:reinf_rebar_fine_steel 10",
+      output = "citadella:reinf_rebar_fine_steel 20",
       cooktime = 20
 })
 
