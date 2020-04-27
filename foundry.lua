@@ -276,6 +276,69 @@ simplecrafting_lib.register(
       cooktime = 20
 })
 
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:bronze_ingot"] = 5
+      },
+      output = "citadella:reinf_rebar_bronze 10",
+      cooktime = 5
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:wrought_iron_ingot"] = 5
+      },
+      output = "citadella:reinf_rebar_wrought_iron 10",
+      cooktime = 10
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:fine_steel_ingot"] = 5
+      },
+      output = "citadella:reinf_rebar_fine_steel 10",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:tin_ingot"] = 20,
+		 ["default:comp_hammer"] = 1
+      },
+      output = "citadella:reinf_plating_tin 10",
+      cooktime = 5
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:brass_ingot"] = 20,
+		 ["default:comp_hammer_adv"] = 1
+      },
+      output = "citadella:reinf_plating_brass 10",
+      cooktime = 10
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["default:alubronze_ingot"] = 20,
+		 ["default:comp_hammer_adv"] = 1
+      },
+      output = "citadella:reinf_plating_alubronze 10",
+      cooktime = 20
+})
+
 local foundry_fns = simplecrafting_lib.generate_multifurnace_functions("foundry", "foundry_fuel", {
       show_guides = true,
       alphabetize_items = true,
