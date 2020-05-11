@@ -27,6 +27,26 @@ function civindustry.factory_drops_from_recipe(recipe, drop_reduction)
    return items
 end
 
+function civindustry.factory_drops_with_tape(fname)
+   return {
+      tools = { "civindustry:factory_tape" },
+      items = { fname }
+   }
+end
+
+minetest.register_tool("civindustry:factory_tape", {
+	description = "Factory Tape",
+	inventory_image = "civindustry_factory_tape.png",
+	tool_capabilities = {
+           full_punch_interval = default.PUNCH_INTERVAL,
+           max_drop_level=3,
+           groupcaps={
+              factory = {times={[3]=1.5}, uses=5, maxlevel=3},
+           }
+	},
+	sound = {breaks = "default_tool_breaks"},
+})
+
 dofile(modpath .. "/burner.lua")
 dofile(modpath .. "/assembler.lua")
 

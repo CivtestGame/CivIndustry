@@ -80,6 +80,7 @@ simplecrafting_lib.register(
 advanced_smelter_fns.drop = {
    max_items = 1,
    items = {
+      civindustry.factory_drops_with_tape("civindustry:advanced_smelter"),
       { items = civindustry.factory_drops_from_recipe(advanced_smelter_recipe, 0.5) }
    }
 }
@@ -94,7 +95,7 @@ minetest.register_node("civindustry:advanced_smelter", {
 		"default_furnace_side.png", "civindustry_advanced_smelter_front.png"
 	},
 	paramtype2 = "facedir",
-	groups = {cracky=2, level=2},
+	groups = {cracky=2, level=2, factory=3},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -131,8 +132,7 @@ minetest.register_node("civindustry:advanced_smelter_active", {
 	},
 	paramtype2 = "facedir",
 	light_source = 8,
-	drop = "civindustry:advanced_smelter",
-	groups = {cracky=2, level=2, not_in_creative_inventory=1},
+	groups = {cracky=2, level=2, not_in_creative_inventory=1, factory=3},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
