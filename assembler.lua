@@ -111,6 +111,28 @@ simplecrafting_lib.register(
       cooktime = 20
 })
 
+simplecrafting_lib.register(
+   "assembler",
+   {
+      input = {
+         ["group:tree"] = 4,
+		 ["farming:string"] = 6
+      },
+      output = "civarsenal:bow_wood_long",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "assembler",
+   {
+      input = {
+         ["default:comp_toolrod_strong"] = 2,
+		 ["farming:string"] = 8
+      },
+      output = "civarsenal:bow_composite",
+      cooktime = 20
+})
+
 local assembler_fns = simplecrafting_lib.generate_multifurnace_functions("assembler", "assembler_fuel", {
       show_guides = true,
       alphabetize_items = true,

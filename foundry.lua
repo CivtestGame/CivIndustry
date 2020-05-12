@@ -339,6 +339,18 @@ simplecrafting_lib.register(
       cooktime = 20
 })
 
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["group:ferrous_ingot"] = 4,
+		 ["default:steel_ingot"] = 4,
+		 ["group:tree"] = 2
+      },
+      output = "civarsenal:handcannon",
+      cooktime = 20
+})
+
 local foundry_fns = simplecrafting_lib.generate_multifurnace_functions("foundry", "foundry_fuel", {
       show_guides = true,
       alphabetize_items = true,
