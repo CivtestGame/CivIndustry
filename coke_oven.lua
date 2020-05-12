@@ -79,6 +79,7 @@ simplecrafting_lib.register(
 coke_oven_fns.drop = {
    max_items = 1,
    items = {
+      civindustry.factory_drops_with_tape("civindustry:coke_oven"),
       { items = civindustry.factory_drops_from_recipe(coke_oven_recipe, 0.5) }
    }
 }
@@ -93,7 +94,7 @@ minetest.register_node("civindustry:coke_oven", {
 		"civindustry_coke_oven_side.png", "civindustry_coke_oven_front.png"
 	},
 	paramtype2 = "facedir",
-	groups = {cracky=2},
+	groups = {cracky=2, factory=3},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -130,8 +131,7 @@ minetest.register_node("civindustry:coke_oven_active", {
 	},
 	paramtype2 = "facedir",
 	light_source = 8,
-	drop = "civindustry:coke_oven",
-	groups = {cracky=2, not_in_creative_inventory=1},
+	groups = {cracky=2, not_in_creative_inventory=1, factory=3},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),

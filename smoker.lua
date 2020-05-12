@@ -99,6 +99,7 @@ simplecrafting_lib.register(
 smoker_fns.drop = {
    max_items = 1,
    items = {
+      civindustry.factory_drops_with_tape("civindustry:smoker"),
       { items = civindustry.factory_drops_from_recipe(smoker_recipe, 0.5) }
    }
 }
@@ -113,7 +114,7 @@ minetest.register_node("civindustry:smoker", {
         "civindustry_smoker_side.png", "civindustry_smoker_front.png"
     },
     paramtype2 = "facedir",
-    groups = {cracky=2},
+    groups = {cracky=2, factory=3},
     legacy_facedir_simple = true,
     is_ground_content = false,
     sounds = default.node_sound_stone_defaults(),
@@ -150,8 +151,7 @@ minetest.register_node("civindustry:smoker_active", {
     },
     paramtype2 = "facedir",
     light_source = 8,
-    drop = "civindustry:smoker",
-    groups = {cracky=2, not_in_creative_inventory=1},
+    groups = {cracky=2, not_in_creative_inventory=1, factory=3},
     legacy_facedir_simple = true,
     is_ground_content = false,
     sounds = default.node_sound_stone_defaults(),
