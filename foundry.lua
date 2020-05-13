@@ -351,6 +351,17 @@ simplecrafting_lib.register(
       cooktime = 20
 })
 
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
+         ["group:ferrous_ingot"] = 4,
+		 ["default:comp_toolrod"] = 2
+      },
+      output = "civarsenal:inv_bolt 20",
+      cooktime = 20
+})
+
 local foundry_fns = simplecrafting_lib.generate_multifurnace_functions("foundry", "foundry_fuel", {
       show_guides = true,
       alphabetize_items = true,

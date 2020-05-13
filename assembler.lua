@@ -137,6 +137,18 @@ simplecrafting_lib.register(
    "assembler",
    {
       input = {
+         ["default:comp_toolrod"] = 1,
+		 ["group:tree"] = 4,
+		 ["farming:string"] = 8
+      },
+      output = "civarsenal:crossbow_wood",
+      cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "assembler",
+   {
+      input = {
          ["default:comp_fabric"] = 4,
 		 ["mobs:leather"] = 2
       },
