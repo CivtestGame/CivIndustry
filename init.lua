@@ -67,6 +67,7 @@ dofile(modpath .. "/kiln.lua")
 dofile(modpath .. "/smoker.lua")
 dofile(modpath .. "/bakery.lua")
 dofile(modpath .. "/carpenter.lua")
+dofile(modpath .. "/lime_kiln.lua")
 
 dofile(modpath .. "/component_factory.lua")
 dofile(modpath .. "/grindstone.lua")
