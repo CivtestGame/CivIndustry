@@ -27,6 +27,32 @@ function civindustry.factory_drops_from_recipe(recipe, drop_reduction)
    return items
 end
 
+----
+---- Example for random recipes i.e. fossils
+----
+-- minetest.register_craftitem("civindustry:fossil_cracker_output", {
+-- 	description = "Random Fossil Cracker Output",
+-- 	inventory_image =
+--            "[combine:32x32"
+--            .. ":4,4=default_stone.png"
+--            .. ":8,8=default_glass.png"
+--            .. ":12,12=default_gravel.png"
+-- })
+
+-- simplecrafting_lib.register(
+--    "fossil_cracker",
+--    {
+--       input = {
+--          ["default:obsidian"] = 1
+--       },
+--       output = "civindustry:fossil_cracker_output 1",
+--       random_returns = {
+--          { rarity = 2, items = {"default:stone 2"} },
+--          { rarity = 2, items = {"default:glass 2", "default:gravel 2"} },
+--       },
+--       cooktime = 3
+-- })
+
 function civindustry.factory_drops_with_tape(fname)
    return {
       tools = { "civindustry:factory_tape" },
