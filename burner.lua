@@ -44,7 +44,7 @@ simplecrafting_lib.register(
          ["default:limestone_dust"] = 2
       },
       output = "default:quicklime 1",
-      cooktime = 5
+      cooktime = 10
 })
 
 simplecrafting_lib.register(
@@ -54,7 +54,7 @@ simplecrafting_lib.register(
          ["default:coral_skeleton"] = 1
       },
       output = "default:quicklime 1",
-      cooktime = 5
+      cooktime = 10
 })
 
 simplecrafting_lib.register(

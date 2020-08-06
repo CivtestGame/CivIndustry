@@ -30,10 +30,10 @@ simplecrafting_lib.register(
 )
 
 simplecrafting_lib.register(
-   "smelter_fuel",
+   "stone_smelter_fuel",
    {
       input = { ["default:coalblock"] = 1 },
-      burntime = 360,
+      burntime = 9 * 40,
    }
 )
 
@@ -41,40 +41,40 @@ simplecrafting_lib.register(
    "stone_smelter",
    {
       input = {
-         ["default:cobble"] = 1
+         ["default:cobble"] = 10
       },
-      output = "default:stone 1",
-      cooktime = 2
+      output = "default:stone 12",
+      cooktime = 5
 })
 
 simplecrafting_lib.register(
    "stone_smelter",
    {
       input = {
-         ["default:desert_sand"] = 2
+         ["default:desert_sand"] = 10
       },
-      output = "default:desert_sandstone 1",
-      cooktime = 2
+      output = "default:desert_sandstone 12",
+      cooktime = 5
 })
 
 simplecrafting_lib.register(
    "stone_smelter",
    {
       input = {
-         ["default:sand"] = 2
+         ["default:sand"] = 10
       },
-      output = "default:sandstone 1",
-      cooktime = 2
+      output = "default:sandstone 12",
+      cooktime = 5
 })
 
 simplecrafting_lib.register(
    "stone_smelter",
    {
       input = {
-         ["default:silver_sand"] = 2
+         ["default:silver_sand"] = 10
       },
-      output = "default:silver_sandstone 1",
-      cooktime = 2
+      output = "default:silver_sandstone 12",
+      cooktime = 5
 })
 
 simplecrafting_lib.register(
