@@ -8,6 +8,14 @@
 simplecrafting_lib.register(
    "assembler_fuel",
    {
+      input = { ["default:coke"] = 1 },
+      burntime = 80,
+   }
+)
+
+simplecrafting_lib.register(
+   "assembler_fuel",
+   {
       input = { ["default:charcoal"] = 1 },
       burntime = 40,
    }
