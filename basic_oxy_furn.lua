@@ -13,6 +13,31 @@ simplecrafting_lib.register(
    }
 )
 
+
+simplecrafting_lib.register(
+   "basic_oxy_furn",
+   {
+      input = {
+         ["default:iron_lump"] = 50,
+		 ["default:quicklime"] = 80
+      },
+      output = "default:fine_steel_lump 60",
+	  returns = {
+		["default:slag"] = 40,
+      },
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "basic_oxy_furn",
+   {
+      input = {
+         ["default:fine_steel_lump"] = 10
+      },
+      output = "default:fine_steel_ingot 10",
+      cooktime = 10
+})
+
 simplecrafting_lib.register(
    "basic_oxy_furn",
    {

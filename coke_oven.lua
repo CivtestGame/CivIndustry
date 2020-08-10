@@ -41,6 +41,19 @@ simplecrafting_lib.register(
    "coke_oven",
    {
       input = {
+         ["default:coal_lump"] = 80
+      },
+      output = "default:coke 80",
+	  returns = {
+		["default:elem_sulphur"] = 25,
+      },
+      cooktime = 240
+})
+
+simplecrafting_lib.register(
+   "coke_oven",
+   {
+      input = {
          ["default:coal_lump"] = 8
       },
       output = "default:coke 6",

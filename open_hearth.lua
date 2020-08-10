@@ -33,6 +33,31 @@ simplecrafting_lib.register(
    "open_hearth",
    {
       input = {
+         ["default:iron_lump"] = 50,
+		 ["default:quicklime"] = 50
+      },
+      output = "default:steel_lump 55",
+	  returns = {
+		["default:slag"] = 20,
+      },
+      cooktime = 60
+})
+
+
+simplecrafting_lib.register(
+   "open_hearth",
+   {
+      input = {
+         ["default:steel_lump"] = 10,
+      },
+      output = "default:steel_ingot 10",
+      cooktime = 10
+})
+
+simplecrafting_lib.register(
+   "open_hearth",
+   {
+      input = {
          ["default:iron_lump"] = 4,
 		 ["default:quicklime"] = 5
       },

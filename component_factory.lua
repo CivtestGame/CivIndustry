@@ -41,6 +41,67 @@ simplecrafting_lib.register(
    "component_factory",
    {
       input = {
+         ["default:flint"] = 20,
+		 ["default:gravel"] = 20,
+		 ["default:obsidian_shard"] = 10
+      },
+      output = "default:comp_sharp 50",
+      cooktime = 180
+})
+
+simplecrafting_lib.register(
+   "component_factory",
+   {
+      input = {
+         ["default:flint"] = 20,
+		 ["default:gravel"] = 20,
+		 ["default:obsidian_shard"] = 10,
+		 ["default:sand"] = 10,
+		 ["default:steel_ingot"] = 2
+      },
+      output = "default:comp_sharp_adv 50",
+      cooktime = 180
+})
+
+simplecrafting_lib.register(
+   "component_factory",
+   {
+      input = {
+         ["default:bronze_ingot"] = 20,
+		 ["default:copper_ingot"] = 15,
+		 ["default:iron_ingot"] = 15
+      },
+      output = "default:comp_hammer 50",
+      cooktime = 180
+})
+
+simplecrafting_lib.register(
+   "component_factory",
+   {
+      input = {
+         ["default:bronze_ingot"] = 20,
+		 ["default:steel_ingot"] = 10,
+		 ["default:wrought_iron_ingot"] = 15
+      },
+      output = "default:comp_hammer_adv 50",
+      cooktime = 180
+})
+
+simplecrafting_lib.register(
+   "component_factory",
+   {
+      input = {
+         ["farming:string"] = 80,
+		 ["group:wool"] = 20,
+      },
+      output = "default:comp_fabric 20",
+      cooktime = 60
+})
+
+simplecrafting_lib.register(
+   "component_factory",
+   {
+      input = {
          ["default:flint"] = 4,
 		 ["default:gravel"] = 4,
 		 ["default:obsidian_shard"] = 4

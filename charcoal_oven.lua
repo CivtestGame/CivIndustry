@@ -33,6 +33,16 @@ simplecrafting_lib.register(
    "charcoal_oven",
    {
       input = {
+         ["group:tree"] = 99,
+      },
+      output = "default:charcoal 401",
+      cooktime = 300
+})
+
+simplecrafting_lib.register(
+   "charcoal_oven",
+   {
+      input = {
          ["group:tree"] = 12,
       },
       output = "default:charcoal 41",

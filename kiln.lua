@@ -41,6 +41,17 @@ simplecrafting_lib.register(
    "kiln",
    {
       input = {
+         ["group:sand"] = 40
+      },
+      output = "default:glass 50",
+      cooktime = 60
+})
+
+
+simplecrafting_lib.register(
+   "kiln",
+   {
+      input = {
          ["default:sand"] = 1
       },
       output = "default:glass 1",
