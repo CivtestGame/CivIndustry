@@ -99,6 +99,14 @@ dofile(modpath .. "/component_factory.lua")
 dofile(modpath .. "/grindstone.lua")
 dofile(modpath .. "/foundry.lua")
 
+dofile(modpath .. "/chemical_processor.lua")
+dofile(modpath .. "/munitions_factory.lua")
+
+minetest.register_craftitem("civindustry:black_powder", {
+	description = "Black Powder",
+	inventory_image = "civindustry_black_powder.png"
+})
+
 --------------------------------------------------------------------------------
 --
 -- Convert factory-mod factories to CivIndustry ones
