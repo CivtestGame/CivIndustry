@@ -355,6 +355,18 @@ simplecrafting_lib.register(
    "foundry",
    {
       input = {
+	     ["default:brass_ingot"] = 4,
+		 ["group:tree"] = 2,
+		 ["default:comp_toolrod"] =1
+      },
+	  output = "civarsenal:brass_rifle",
+	  cooktime = 20
+})
+
+simplecrafting_lib.register(
+   "foundry",
+   {
+      input = {
          ["group:ferrous_ingot"] = 4,
 		 ["default:comp_toolrod"] = 2
       },
