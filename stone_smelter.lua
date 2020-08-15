@@ -43,8 +43,8 @@ simplecrafting_lib.register(
       input = {
          ["default:cobble"] = 50
       },
-      output = "default:stone 150",
-      cooktime = 60
+      output = "default:stone 75",
+      cooktime = 30
 })
 
 simplecrafting_lib.register(
@@ -93,7 +93,7 @@ simplecrafting_lib.register(
       input = {
          ["default:desert_sand"] = 10
       },
-      output = "default:desert_sandstone 12",
+      output = "default:desert_sandstone 8",
       cooktime = 5
 })
 
@@ -103,7 +103,7 @@ simplecrafting_lib.register(
       input = {
          ["default:sand"] = 10
       },
-      output = "default:sandstone 12",
+      output = "default:sandstone 8",
       cooktime = 5
 })
 
@@ -113,7 +113,7 @@ simplecrafting_lib.register(
       input = {
          ["default:silver_sand"] = 10
       },
-      output = "default:silver_sandstone 12",
+      output = "default:silver_sandstone 8",
       cooktime = 5
 })
 
