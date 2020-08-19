@@ -157,8 +157,8 @@ simplecrafting_lib.register(
    "assembler",
    {
       input = {
-         ["default:comp_fabric"] = 4,
-		 ["mobs:leather"] = 2
+         ["default:comp_fabric"] = 50,
+         ["mobs:leather"] = 50
       },
       output = "civindustry:factory_tape",
       cooktime = 20

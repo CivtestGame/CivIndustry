@@ -67,7 +67,7 @@ minetest.register_tool("civindustry:factory_tape", {
            full_punch_interval = default.PUNCH_INTERVAL,
            max_drop_level=3,
            groupcaps={
-              factory = {times={[3]=1.5}, uses=5, maxlevel=3},
+              factory = {times={[3]=1.5}, uses=1, maxlevel=3},
            }
 	},
 	sound = {breaks = "default_tool_breaks"},
