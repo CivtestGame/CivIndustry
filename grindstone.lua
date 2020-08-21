@@ -150,6 +150,44 @@ simplecrafting_lib.register(
       cooktime = 20
 })
 
+minetest.register_craftitem("civindustry:slag_output", {
+   description = "Random Slag Grinding Output",
+   inventory_image =
+           "[combine:32x32"
+           .. ":4,4=default_gravel.png"
+           .. ":8,8=default_clay.png"
+           .. ":12,12=default_obsidian_shard.png"
+})
+
+simplecrafting_lib.register(
+   "grindstone",
+   {
+      input = {
+         ["default:slag"] = 1
+      },
+      output = "civindustry:slag_output 1",
+      random_returns = {
+         { rarity = 2, items = {"default:gravel 1"} },
+		 { rarity = 4, items = {"default:obsidian_shard 1"} },
+		 { rarity = 4, items = {"default:clay 1"} },
+		 { rarity = 4, items = {"default:limestone 1"} },
+		 { rarity = 8, items = {"civfoundations:gneiss 1"} },
+		 { rarity = 8, items = {"civfoundations:schist 1"} },
+		 { rarity = 8, items = {"civfoundations:slate 1"} },
+		 { rarity = 8, items = {"civfoundations:slate_green 1"} },
+		 { rarity = 8, items = {"default:sand 1"} },
+		 { rarity = 8, items = {"default:silver_sand 1"} },
+		 { rarity = 8, items = {"default:desert_sand 1"} },
+		 { rarity = 25, items = {"default:tin_lump 1"} },
+		 { rarity = 25, items = {"default:copper_lump 1"} },
+		 { rarity = 25, items = {"default:obsidian 1"} },
+		 { rarity = 25, items = {"default:basalt 1"} },
+		 { rarity = 25, items = {"default:granite 1"} },
+		 { rarity = 100, items = {"default:gold_lump 1"} },
+      },
+      cooktime = 1
+})
+
 local grindstone_fns = simplecrafting_lib.generate_multifurnace_functions("grindstone", "grindstone_fuel", {
       show_guides = true,
       alphabetize_items = true,
