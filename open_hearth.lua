@@ -94,14 +94,6 @@ local open_hearth_recipe = {
    ["default:wrought_iron_ingot"] = 198,
 }
 
-simplecrafting_lib.register(
-   "advanced_smelter",
-   {
-      input = open_hearth_recipe,
-      output = "civindustry:open_hearth 1",
-      cooktime = 30
-})
-
 open_hearth_fns.drop = {
    max_items = 1,
    items = {

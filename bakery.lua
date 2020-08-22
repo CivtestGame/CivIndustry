@@ -115,14 +115,6 @@ local bakery_recipe = {
    ["default:clay_brick"] = 99
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = bakery_recipe,
-      output = "civindustry:bakery 1",
-      cooktime = 30
-})
-
 bakery_fns.drop = {
    max_items = 1,
    items = {

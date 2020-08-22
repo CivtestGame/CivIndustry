@@ -158,14 +158,6 @@ local stone_smelter_recipe = {
    ["default:coal_lump"] = 198
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = stone_smelter_recipe,
-      output = "civindustry:stone_smelter 1",
-      cooktime = 30
-})
-
 stone_smelter_fns.drop = {
    max_items = 1,
    items = {

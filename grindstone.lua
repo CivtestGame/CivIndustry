@@ -206,14 +206,6 @@ local grindstone_recipe = {
    ["default:stick"] = 198
 }
 
-simplecrafting_lib.register(
-   "assembler",
-   {
-      input = grindstone_recipe,
-      output = "civindustry:grindstone 1",
-      cooktime = 30
-})
-
 grindstone_fns.drop = {
    max_items = 1,
    items = {

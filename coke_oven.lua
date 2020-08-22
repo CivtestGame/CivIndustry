@@ -81,14 +81,6 @@ local coke_oven_recipe = {
    ["default:coke"] = 198
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = coke_oven_recipe,
-      output = "civindustry:coke_oven 1",
-      cooktime = 30
-})
-
 coke_oven_fns.drop = {
    max_items = 1,
    items = {

@@ -73,6 +73,8 @@ minetest.register_tool("civindustry:factory_tape", {
 	sound = {breaks = "default_tool_breaks"},
 })
 
+dofile(modpath .. "/factory_tree.lua")
+
 dofile(modpath .. "/burner.lua")
 dofile(modpath .. "/assembler.lua")
 
@@ -163,6 +165,12 @@ minetest.register_lbm({
 
 --------------------------------------------------------------------------------
 
+-- minetest.register_on_mods_loaded(craftguide.get_init_items)
+
+--------------------------------------------------------------------------------
+
 minetest.log("[CivIndustry] Initialised.")
+
+
 
 return civindustry

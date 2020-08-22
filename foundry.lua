@@ -394,14 +394,6 @@ local foundry_recipe = {
    ["default:tin_ingot"] = 99
 }
 
-simplecrafting_lib.register(
-   "assembler",
-   {
-      input = foundry_recipe,
-      output = "civindustry:foundry 1",
-      cooktime = 30
-})
-
 foundry_fns.drop = {
    max_items = 1,
    items = {

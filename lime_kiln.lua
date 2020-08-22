@@ -82,14 +82,6 @@ local lime_kiln_recipe = {
    ["default:brass_ingot"] = 99
 }
 
-simplecrafting_lib.register(
-   "stone_smelter",
-   {
-      input = lime_kiln_recipe,
-      output = "civindustry:lime_kiln 1",
-      cooktime = 30
-})
-
 lime_kiln_fns.drop = {
    max_items = 1,
    items = {

@@ -179,14 +179,6 @@ local component_factory_recipe = {
    ["default:tin_ingot"] = 99
 }
 
-simplecrafting_lib.register(
-   "assembler",
-   {
-      input = component_factory_recipe,
-      output = "civindustry:component_factory 1",
-      cooktime = 30
-})
-
 component_factory_fns.drop = {
    max_items = 1,
    items = {

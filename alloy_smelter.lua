@@ -106,14 +106,6 @@ local alloy_smelter_recipe = {
    ["default:wrought_iron_ingot"] = 99,
 }
 
-simplecrafting_lib.register(
-   "advanced_smelter",
-   {
-      input = alloy_smelter_recipe,
-      output = "civindustry:alloy_smelter 1",
-      cooktime = 30
-})
-
 alloy_smelter_fns.drop = {
    max_items = 1,
    items = {

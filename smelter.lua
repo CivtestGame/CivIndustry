@@ -118,14 +118,6 @@ local smelter_recipe = {
    ["default:coke"] = 99
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = smelter_recipe,
-      output = "civindustry:smelter 1",
-      cooktime = 30
-})
-
 smelter_fns.drop = {
    max_items = 1,
    items = {

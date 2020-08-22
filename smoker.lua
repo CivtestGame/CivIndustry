@@ -88,14 +88,6 @@ local smoker_recipe = {
    ["default:charcoal"] = 396
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = smoker_recipe,
-      output = "civindustry:smoker 1",
-      cooktime = 30
-})
-
 smoker_fns.drop = {
    max_items = 1,
    items = {

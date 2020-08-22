@@ -69,14 +69,6 @@ local advanced_smelter_recipe = {
    ["default:copper_ingot"] = 198
 }
 
-simplecrafting_lib.register(
-   "smelter",
-   {
-      input = advanced_smelter_recipe,
-      output = "civindustry:advanced_smelter 1",
-      cooktime = 30
-})
-
 advanced_smelter_fns.drop = {
    max_items = 1,
    items = {

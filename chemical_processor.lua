@@ -82,14 +82,6 @@ local chemical_processor_recipe = {
    ["group:metal_ingot"] = 298
 }
 
-simplecrafting_lib.register(
-   "component_factory",
-   {
-      input = chemical_processor_recipe,
-      output = "civindustry:chemical_processor 1",
-      cooktime = 30
-})
-
 chemical_processor_fns.drop = {
    max_items = 1,
    items = {

@@ -68,14 +68,6 @@ local charcoal_oven_recipe = {
    ["default:charcoal"] = 198
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = charcoal_oven_recipe,
-      output = "civindustry:charcoal_oven 1",
-      cooktime = 30
-})
-
 charcoal_oven_fns.drop = {
    max_items = 1,
    items = {

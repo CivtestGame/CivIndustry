@@ -61,14 +61,6 @@ local carpenter_recipe = {
    ["group:metal_ingot"] = 49
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = carpenter_recipe,
-      output = "civindustry:carpenter 1",
-      cooktime = 30
-})
-
 carpenter_fns.drop = {
    max_items = 1,
    items = {

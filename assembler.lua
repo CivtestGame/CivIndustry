@@ -153,18 +153,6 @@ simplecrafting_lib.register(
       cooktime = 20
 })
 
-simplecrafting_lib.register(
-   "assembler",
-   {
-      input = {
-         ["default:comp_fabric"] = 50,
-         ["mobs:leather"] = 50
-      },
-      output = "civindustry:factory_tape",
-      cooktime = 20
-})
-
-
 local assembler_fns = simplecrafting_lib.generate_multifurnace_functions("assembler", "assembler_fuel", {
       show_guides = true,
       alphabetize_items = true,

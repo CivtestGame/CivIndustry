@@ -151,14 +151,6 @@ local kiln_recipe = {
    ["default:clay_brick"] = 198
 }
 
-simplecrafting_lib.register(
-   "burner",
-   {
-      input = kiln_recipe,
-      output = "civindustry:kiln 1",
-      cooktime = 30
-})
-
 kiln_fns.drop = {
    max_items = 1,
    items = {

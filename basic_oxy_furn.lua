@@ -81,14 +81,6 @@ local basic_oxy_furn_recipe = {
    ["default:wrought_iron_ingot"] = 99,
 }
 
-simplecrafting_lib.register(
-   "open_hearth",
-   {
-      input = basic_oxy_furn_recipe,
-      output = "civindustry:basic_oxy_furn 1",
-      cooktime = 30
-})
-
 basic_oxy_furn_fns.drop = {
    max_items = 1,
    items = {

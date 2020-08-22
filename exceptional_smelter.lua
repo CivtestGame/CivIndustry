@@ -144,14 +144,6 @@ local exceptional_smelter_recipe = {
    ["default:iron_ingot"] = 297,
 }
 
-simplecrafting_lib.register(
-   "advanced_smelter",
-   {
-      input = exceptional_smelter_recipe,
-      output = "civindustry:exceptional_smelter 1",
-      cooktime = 30
-})
-
 exceptional_smelter_fns.drop = {
    max_items = 1,
    items = {

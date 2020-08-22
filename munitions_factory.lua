@@ -113,14 +113,6 @@ local munitions_factory_recipe = {
    ["civindustry:black_powder"] = 80
 }
 
-simplecrafting_lib.register(
-   "component_factory",
-   {
-      input = munitions_factory_recipe,
-      output = "civindustry:munitions_factory 1",
-      cooktime = 30
-})
-
 munitions_factory_fns.drop = {
    max_items = 1,
    items = {
