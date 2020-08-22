@@ -74,18 +74,11 @@ local coke_oven_fns = simplecrafting_lib.generate_multifurnace_functions("coke_o
          -- append_to_formspec = "string",
 })
 
--- Coke Oven Recipe
-
-local coke_oven_recipe = {
-   ["default:stone"] = 198,
-   ["default:coke"] = 198
-}
-
 coke_oven_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:coke_oven"),
-      { items = civindustry.factory_drops_from_recipe(coke_oven_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.coke_oven_recipe, 0.5) }
    }
 }
 

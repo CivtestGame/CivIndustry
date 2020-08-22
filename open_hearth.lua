@@ -86,19 +86,11 @@ local open_hearth_fns = simplecrafting_lib.generate_multifurnace_functions("open
          -- append_to_formspec = "string",
 })
 
--- Open Hearth Furnace Recipe
-
-local open_hearth_recipe = {
-   ["default:bronze_ingot"] = 99,
-   ["default:iron_ingot"] = 99,
-   ["default:wrought_iron_ingot"] = 198,
-}
-
 open_hearth_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:open_hearth"),
-      { items = civindustry.factory_drops_from_recipe(open_hearth_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.open_hearth_recipe, 0.5) }
    }
 }
 

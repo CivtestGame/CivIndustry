@@ -199,18 +199,11 @@ local grindstone_fns = simplecrafting_lib.generate_multifurnace_functions("grind
          -- append_to_formspec = "string",
 })
 
--- Grindstone Recipe
-
-local grindstone_recipe = {
-   ["default:stone"] = 396,
-   ["default:stick"] = 198
-}
-
 grindstone_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:grindstone"),
-      { items = civindustry.factory_drops_from_recipe(grindstone_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.grindstone_recipe, 0.5) }
    }
 }
 

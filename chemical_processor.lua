@@ -75,18 +75,11 @@ local chemical_processor_fns = simplecrafting_lib.generate_multifurnace_function
          -- append_to_formspec = "string",
 })
 
--- Chemical Processor Recipe
-
-local chemical_processor_recipe = {
-   ["default:elem_pewter"] = 99,
-   ["group:metal_ingot"] = 298
-}
-
 chemical_processor_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:chemical_processor"),
-      { items = civindustry.factory_drops_from_recipe(chemical_processor_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.chemical_processor_recipe, 0.5) }
    }
 }
 

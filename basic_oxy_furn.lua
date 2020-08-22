@@ -73,19 +73,11 @@ local basic_oxy_furn_fns = simplecrafting_lib.generate_multifurnace_functions("b
          -- append_to_formspec = "string",
 })
 
--- Basic Oxygen Furnace Recipe
-
-local basic_oxy_furn_recipe = {
-   ["default:steel_ingot"] = 198,
-   ["default:bronze_ingot"] = 99,
-   ["default:wrought_iron_ingot"] = 99,
-}
-
 basic_oxy_furn_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:basic_oxy_furn"),
-      { items = civindustry.factory_drops_from_recipe(basic_oxy_furn_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.basic_oxy_furn_recipe, 0.5) }
    }
 }
 

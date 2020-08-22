@@ -148,21 +148,11 @@ local stone_smelter_fns = simplecrafting_lib.generate_multifurnace_functions("st
          -- append_to_formspec = "string",
 })
 
--- Stone Smelter Recipe
-
-local stone_smelter_recipe = {
-   ["default:stone"] = 297,
-   ["default:sandstone"] = 99,
-   ["default:silver_sandstone"] = 99,
-   ["default:desert_sandstone"] = 99,
-   ["default:coal_lump"] = 198
-}
-
 stone_smelter_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:stone_smelter"),
-      { items = civindustry.factory_drops_from_recipe(stone_smelter_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.stone_smelter_recipe, 0.5) }
    }
 }
 

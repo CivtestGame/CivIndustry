@@ -170,20 +170,11 @@ local component_factory_fns = simplecrafting_lib.generate_multifurnace_functions
          -- append_to_formspec = "string",
 })
 
--- Component Factory Recipe
-
-local component_factory_recipe = {
-   ["default:stone"] = 99,
-   ["default:bronze_ingot"] = 99,
-   ["default:copper_ingot"] = 99,
-   ["default:tin_ingot"] = 99
-}
-
 component_factory_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:component_factory"),
-      { items = civindustry.factory_drops_from_recipe(component_factory_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.component_factory_recipe, 0.5) }
    }
 }
 

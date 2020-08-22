@@ -105,19 +105,11 @@ local munitions_factory_fns = simplecrafting_lib.generate_multifurnace_functions
          -- append_to_formspec = "string",
 })
 
--- Munitions Factory Recipe
-
-local munitions_factory_recipe = {
-   ["default:lead"] = 198,
-   ["default:brass_ingot"] = 99,
-   ["civindustry:black_powder"] = 80
-}
-
 munitions_factory_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:munitions_factory"),
-      { items = civindustry.factory_drops_from_recipe(munitions_factory_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.munitions_factory_recipe, 0.5) }
    }
 }
 

@@ -74,19 +74,11 @@ local lime_kiln_fns = simplecrafting_lib.generate_multifurnace_functions("lime_k
          -- append_to_formspec = "string",
 })
 
--- Lime Kiln Recipe
-
-local lime_kiln_recipe = {
-   ["default:stone"] = 99,
-   ["default:clay_brick"] = 198,
-   ["default:brass_ingot"] = 99
-}
-
 lime_kiln_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:lime_kiln"),
-      { items = civindustry.factory_drops_from_recipe(lime_kiln_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.lime_kiln_recipe, 0.5) }
    }
 }
 

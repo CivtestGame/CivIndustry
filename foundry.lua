@@ -385,20 +385,11 @@ local foundry_fns = simplecrafting_lib.generate_multifurnace_functions("foundry"
          -- append_to_formspec = "string",
 })
 
--- Foundry Recipe
-
-local foundry_recipe = {
-   ["default:stone"] = 99,
-   ["default:sand"] = 99,
-   ["default:iron_ingot"] = 99,
-   ["default:tin_ingot"] = 99
-}
-
 foundry_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:foundry"),
-      { items = civindustry.factory_drops_from_recipe(foundry_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.foundry_recipe, 0.5) }
    }
 }
 

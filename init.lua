@@ -9,6 +9,11 @@ function civindustry.factory_drops_from_recipe(recipe, drop_reduction)
    -- Essentially, converts a simplecrafting_lib recipe to something suitable
    -- for use in a NodeDef's `drop` table. Multiplies the number of drops by
    -- `drop_reduction` to apply a resource penalty to factory breakage.
+
+   if not recipe then
+      error("No recipe specified.")
+   end
+
    local items = {}
    for k, v in pairs(recipe) do
       local maxstack_adjusted = math.floor(v / MAXSTACK_SIZE)
@@ -72,6 +77,19 @@ minetest.register_tool("civindustry:factory_tape", {
 	},
 	sound = {breaks = "default_tool_breaks"},
 })
+
+simplecrafting_lib.register(
+   "assembler",
+   {
+      input = {
+         ["default:comp_fabric"] = 50,
+         ["mobs:leather"] = 50
+      },
+      output = "civindustry:factory_tape",
+      cooktime = 20
+})
+
+dofile(modpath .. "/factory_recipes.lua")
 
 dofile(modpath .. "/factory_tree.lua")
 

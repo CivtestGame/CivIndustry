@@ -61,19 +61,11 @@ local advanced_smelter_fns = simplecrafting_lib.generate_multifurnace_functions(
          -- append_to_formspec = "string",
 })
 
--- Advanced Smelter Recipe
-
-local advanced_smelter_recipe = {
-   ["default:bronze_ingot"] = 99,
-   ["default:tin_ingot"] = 198,
-   ["default:copper_ingot"] = 198
-}
-
 advanced_smelter_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:advanced_smelter"),
-      { items = civindustry.factory_drops_from_recipe(advanced_smelter_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.advanced_smelter_recipe, 0.5) }
    }
 }
 

@@ -137,20 +137,13 @@ local exceptional_smelter_fns = simplecrafting_lib.generate_multifurnace_functio
          -- append_to_formspec = "string",
 })
 
--- Exceptional Smelter Recipe
-
-local exceptional_smelter_recipe = {
-   ["default:bronze_ingot"] = 297,
-   ["default:iron_ingot"] = 297,
-}
-
 exceptional_smelter_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:exceptional_smelter"),
       {
          items = civindustry.factory_drops_from_recipe(
-            exceptional_smelter_recipe, 0.5
+            civindustry.exceptional_smelter_recipe, 0.5
          )
       }
    }

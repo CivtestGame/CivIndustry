@@ -99,18 +99,11 @@ local alloy_smelter_fns = simplecrafting_lib.generate_multifurnace_functions("al
          -- append_to_formspec = "string",
 })
 
--- Alloy Smelter Recipe
-
-local alloy_smelter_recipe = {
-   ["default:bronze_ingot"] = 297,
-   ["default:wrought_iron_ingot"] = 99,
-}
-
 alloy_smelter_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:alloy_smelter"),
-      { items = civindustry.factory_drops_from_recipe(alloy_smelter_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.alloy_smelter_recipe, 0.5) }
    }
 }
 

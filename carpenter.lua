@@ -54,18 +54,11 @@ local carpenter_fns = simplecrafting_lib.generate_multifurnace_functions("carpen
          -- append_to_formspec = "string",
 })
 
--- Carpenter Recipe
-
-local carpenter_recipe = {
-   ["group:tree"] = 198,
-   ["group:metal_ingot"] = 49
-}
-
 carpenter_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:carpenter"),
-      { items = civindustry.factory_drops_from_recipe(carpenter_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.carpenter_recipe, 0.5) }
    }
 }
 

@@ -81,18 +81,11 @@ local smoker_fns = simplecrafting_lib.generate_multifurnace_functions("smoker", 
          -- append_to_formspec = "string",
 })
 
--- Smoker Recipe
-
-local smoker_recipe = {
-   ["default:stone"] = 99,
-   ["default:charcoal"] = 396
-}
-
 smoker_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:smoker"),
-      { items = civindustry.factory_drops_from_recipe(smoker_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.smoker_recipe, 0.5) }
    }
 }
 

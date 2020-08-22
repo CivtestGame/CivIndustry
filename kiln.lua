@@ -141,21 +141,11 @@ local kiln_fns = simplecrafting_lib.generate_multifurnace_functions("kiln", "kil
          -- append_to_formspec = "string",
 })
 
--- Kiln Recipe
-
-local kiln_recipe = {
-   ["default:stone"] = 99,
-   ["default:sandstone"] = 50,
-   ["default:silver_sandstone"] = 50,
-   ["default:desert_sandstone"] = 50,
-   ["default:clay_brick"] = 198
-}
-
 kiln_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:kiln"),
-      { items = civindustry.factory_drops_from_recipe(kiln_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.kiln_recipe, 0.5) }
    }
 }
 

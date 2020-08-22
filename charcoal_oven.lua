@@ -60,19 +60,11 @@ local charcoal_oven_fns = simplecrafting_lib.generate_multifurnace_functions("ch
          -- append_to_formspec = "string",
 })
 
--- Charcoal Oven Recipe
-
-local charcoal_oven_recipe = {
-   ["group:tree"] = 198,
-   ["default:stone"] = 99,
-   ["default:charcoal"] = 198
-}
-
 charcoal_oven_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:charcoal_oven"),
-      { items = civindustry.factory_drops_from_recipe(charcoal_oven_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.charcoal_oven_recipe, 0.5) }
    }
 }
 

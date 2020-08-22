@@ -110,19 +110,11 @@ local smelter_fns = simplecrafting_lib.generate_multifurnace_functions("smelter"
          -- append_to_formspec = "string",
 })
 
--- Smelter Recipe
-
-local smelter_recipe = {
-   ["default:quicklime"] = 99,
-   ["default:charcoal"] = 99,
-   ["default:coke"] = 99
-}
-
 smelter_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:smelter"),
-      { items = civindustry.factory_drops_from_recipe(smelter_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.smelter_recipe, 0.5) }
    }
 }
 

@@ -107,19 +107,11 @@ local bakery_fns = simplecrafting_lib.generate_multifurnace_functions("bakery", 
          -- append_to_formspec = "string",
 })
 
--- Bakery Recipe
-
-local bakery_recipe = {
-   ["default:stone"] = 99,
-   ["default:charcoal"] = 198,
-   ["default:clay_brick"] = 99
-}
-
 bakery_fns.drop = {
    max_items = 1,
    items = {
       civindustry.factory_drops_with_tape("civindustry:bakery"),
-      { items = civindustry.factory_drops_from_recipe(bakery_recipe, 0.5) }
+      { items = civindustry.factory_drops_from_recipe(civindustry.bakery_recipe, 0.5) }
    }
 }
 
