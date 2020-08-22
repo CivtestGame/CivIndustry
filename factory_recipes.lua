@@ -149,3 +149,10 @@ civindustry.basic_oxy_furn_recipe = {
    ["default:bronze_ingot"] = 99,
    ["default:wrought_iron_ingot"] = 99,
 }
+
+-- Defense Forge Recipe
+
+civindustry.defense_forge_recipe = {
+   ["default:obsidian"] = 99,
+   ["default:steel_ingot"] = 198,
+}

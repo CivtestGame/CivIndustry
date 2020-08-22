@@ -122,6 +122,8 @@ dofile(modpath .. "/foundry.lua")
 dofile(modpath .. "/chemical_processor.lua")
 dofile(modpath .. "/munitions_factory.lua")
 
+dofile(modpath .. "/defense_forge.lua")
+
 minetest.register_craftitem("civindustry:black_powder", {
 	description = "Black Powder",
 	inventory_image = "civindustry_black_powder.png"
